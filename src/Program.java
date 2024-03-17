@@ -13,11 +13,13 @@ public class Program {
 
         System.out.println("\nПривет Мир!\n");
 
-        hello();
+        //?
+
+        hello hello();
         welcome();
         welcome();
 
-        static void hello () {
+        () {
             System.out.println("Hello World");
         }
 
@@ -27,6 +29,23 @@ public class Program {
         for (int i = 1; i <= 5; i++) {
             System.out.println("i = " + i);
         }
+
+        // массивы
+
+        int[] numbers = new int[5];
+        numbers[0] = 10;
+        numbers[1] = 20;
+
+        int[] numbers1 = {10, 20, 30, 40, 50};
+
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+
+        String greeting = "Hello, World!"; // строка - объект класса String
+
     }
 
 
