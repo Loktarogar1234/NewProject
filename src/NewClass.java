@@ -53,7 +53,7 @@ public class NewClass {
         }
 
 
-        int month = 4;
+        int month = (int) (Math.random() * 12) + 1;
         switch (month) {
             case 1:
                 System.out.println("\nянварь\n");
