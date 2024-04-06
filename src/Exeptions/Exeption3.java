@@ -16,7 +16,7 @@ public class Exeption3 {
         System.out.println("выполнение кода после try & catch");
     }
 
-    public static void readfile() throws FileNotFoundException {
+    public static void readfile() throws FileNotFoundException { //перебрасывает исключение выше
         File file = new File("c:\\1234.txt"); //файл 123.txt
         Scanner scanner = new Scanner(file);
         System.out.println(scanner.nextLine());
