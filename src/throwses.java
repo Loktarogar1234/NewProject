@@ -1,5 +1,3 @@
-package Exeptions;
-
 import java.io.IOException;
 
 public class throwses {
