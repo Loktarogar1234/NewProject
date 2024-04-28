@@ -3,7 +3,7 @@ package Exeptions;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Exeption5 {
+public class Exception5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); //вводим числа в строку
         while (true) {

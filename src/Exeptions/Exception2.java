@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Exeption2 {
+public class Exception2 {
     public static void main(String[] args) {
         File file = new File("c:\\123.txt"); //файл 123.txt
         try { //сами ловим ошибки и обрабатываем исключение
