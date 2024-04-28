@@ -1,4 +1,4 @@
-import java.io.IOException;
+package Exeptions;
 
 public class throwses {
     public static void main(String[] args) {

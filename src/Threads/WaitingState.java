@@ -1,3 +1,5 @@
+package Threads;
+
 public class WaitingState implements Runnable {
     public static Thread t1;
 

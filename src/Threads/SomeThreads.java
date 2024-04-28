@@ -1,4 +1,6 @@
- class threadses {
+package Threads;
+
+class threadses {
 
      public void howToRunThreads() {
          ThreadClass threadClass = new ThreadClass("First");

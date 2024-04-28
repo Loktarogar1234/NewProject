@@ -1,3 +1,5 @@
+package Threads;
+
 public class LifeCicles {
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(new DemoBlockedRunnable());
