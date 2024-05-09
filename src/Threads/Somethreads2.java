@@ -39,11 +39,11 @@ class BankAccount {
 }
 
 class BankAccountThread extends Thread {
-    private BankAccount account;
+    private BankAccounts account;
     private boolean deposit;
     private int amount;
 
-    public BankAccountThread(BankAccount account, boolean deposit, int amount) {
+    public BankAccountThread(BankAccounts account, boolean deposit, int amount) {
         this.account = account;  // Устанавливаем ссылку на аккаунт
         this.deposit = deposit;  // Определяем тип операции (внесение/снятие)
         this.amount = amount;  // Устанавливаем сумму операции
@@ -65,7 +65,7 @@ class BankAccountThread extends Thread {
 
 public class Somethreads2 {
     public static void main(String[] args) throws InterruptedException {
-        BankAccount account = new BankAccount(100);  // Создаем аккаунт с начальным балансом 100
+        BankAccounts account = new BankAccounts(100);  // Создаем аккаунт с начальным балансом 100
 
         Scanner scan = new Scanner(System.in);
 
