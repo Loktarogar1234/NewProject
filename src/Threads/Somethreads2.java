@@ -3,7 +3,8 @@ package Threads;
 import java.util.Scanner;
 
 class BankAccount {
-    private int balance;  // Приватное хранение баланса счета
+    private Integer balance;  // Приватное хранение баланса счета.
+    // INTEGER - способ определения НЕ примитивного типа. !! integer.fromstring
 
     public BankAccount(int initialBalance) {
         balance = initialBalance;  // Инициализация баланса при создании объекта
@@ -27,7 +28,7 @@ class BankAccount {
         // После выхода из цикла `while` баланс достаточен для снятия
         balance -= amount;  // Снимаем указанную сумму
         System.out.println("Снятие: " + amount + ", баланс после снятия: " + balance);
-        notifyAll();  // Уведомляем другие потоки о изменении состояния
+        notifyAll();  // Уведомляем другие потоки об изменении состояния
     }
 
 
