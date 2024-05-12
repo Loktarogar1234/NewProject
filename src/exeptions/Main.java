@@ -1,4 +1,4 @@
-package Exeptions;
+package exeptions;
 
 class MyException extends Exception {
     public MyException() {

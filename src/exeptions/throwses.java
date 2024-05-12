@@ -1,4 +1,4 @@
-package Exeptions;
+package exeptions;
 
 public class throwses {
     public static void main(String[] args) {

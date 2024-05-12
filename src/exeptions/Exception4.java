@@ -1,4 +1,4 @@
-package Exeptions;
+package exeptions;
 
 import java.io.IOException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Threads;
+package threads;
 
 class BankAccounts {
     private int balance;
