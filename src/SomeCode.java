@@ -3,7 +3,7 @@ public class SomeCode {
         int i = 0;
         i++;
         i--;
-        //System.out.println(i);
+        System.out.println(i);
     }
 }
 
