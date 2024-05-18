@@ -24,9 +24,11 @@ public class States implements Runnable {
             synchronized (lock) {
                 try {
                     System.out.println("Waiting thread is waiting.");
+                    Thread.currentThread().interrupt();
                     lock.wait();  // Поток останавливается и ждет notify
                 } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
+                    // Thread.currentThread().isInterrupted();
+                    System.out.println("Thread has been interupted.");
                 }
                 System.out.println("Waiting thread resumed.");
             }

@@ -21,7 +21,6 @@ public class LifeCicles {
         t3.start(); // запускаем код таска в новом потоке
         task.run(); // запускаем код ран в текущем потоке
         Thread.sleep(3000);
-
     }
 }
 

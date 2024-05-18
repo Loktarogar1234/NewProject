@@ -40,7 +40,8 @@ public class SomeCode {
     IINC 1 -1                 // Уменьшает локальную переменную 1 (i) на 1
    L3
     LINENUMBER 6 L3
-    GETSTATIC java/lang/System.out : Ljava/io/PrintStream; // Получает статическое поле System.out из класса System
+    GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+    // Получает статическое поле System.out из класса System
     ILOAD 1                   // Загружает значение переменной i в стек
     INVOKEVIRTUAL java/io/PrintStream.println (I)V // Вызывает метод println для вывода значения i
    L4

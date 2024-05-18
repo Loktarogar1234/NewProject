@@ -21,7 +21,6 @@ class MyRunnable implements Runnable {
           }
 }
 
-
 public class HowToCreateThreads {
     public static void main(String[] args) {
         // Наследование от класса Thread, просто и понятно, но менее гибко, чем реализация Runnable

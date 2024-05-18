@@ -13,19 +13,23 @@ public class exec {
             System.out.println("Hello " + threadName);  // Хело поток
         };
 
-        executor.submit(world);  // Отправляем задачу для выполнения в одном из потоков пула
+        executor.submit(world);
+        // Отправляем задачу для выполнения в одном из потоков пула
 
         try {
             System.out.println("попытка завершить экзекутор");
-            executor.shutdown();  // Инициируем остановку экзекутора, экзекутор перестает принимать новые задачи
-            executor.awaitTermination(5, TimeUnit.SECONDS);  // Ожидаем завершения всех задач в пуле в течение 5 секунд
+            executor.shutdown();
+            // Экзекутор перестает принимать новые задачи, текущие будут завершены
+            executor.awaitTermination(5, TimeUnit.SECONDS);
+            // Ожидаем завершения всех задач в пуле в течение 5 секунд. Поток заблокирован
         } catch (InterruptedException e) {
             System.err.println("ожидание прервано");
         } finally {
             if (!executor.isTerminated()) {  // Проверяем, все ли задачи завершились
                 System.err.println("не все задачи завершились");
             }
-            executor.shutdownNow();  // Принудительное завершение всех оставшихся задач
+            executor.shutdownNow();
+            // Принудительное завершение всех оставшихся задач
             System.out.println("завершено");
         }
     }

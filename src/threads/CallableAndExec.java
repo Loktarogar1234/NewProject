@@ -20,6 +20,7 @@ public class CallableAndExec {
             Future<String> futureResult = threadPool.submit(callableTask); // Запуск задач
             String result = futureResult.get();  // Ожидание результата
             System.out.println("Результат: " + result); // Вывод результата
+            // futureResult.isDone()
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         } finally {
