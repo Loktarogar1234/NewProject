@@ -2,7 +2,7 @@ package may19;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+// ! сделать не на локах, а на нотифаях и вейт
 public class DeadlockExample {
     private static final Lock lock1 = new ReentrantLock();
     private static final Lock lock2 = new ReentrantLock();
