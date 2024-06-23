@@ -1,3 +1,5 @@
+package theBeginning;
+
 interface Displayable { //интерфейс с одним методом
     void displayClassName();
 }

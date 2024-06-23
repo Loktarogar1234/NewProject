@@ -10,3 +10,4 @@ out/
 ### Mac OS ###
 .DS_Store
 /.idea/
+/1GBFile.bin

@@ -1,3 +1,5 @@
+package theBeginning;
+
 import java.util.*;
 
 public class Collections {

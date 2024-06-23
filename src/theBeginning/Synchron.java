@@ -1,3 +1,5 @@
+package theBeginning;
+
 public class Synchron {
     // Synchronized - монополия использования метода
     // Когда метод объекта объявлен как synchronized, монитор (или замок) объекта используется для контроля

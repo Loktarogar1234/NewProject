@@ -1,0 +1,2 @@
+java .\NewProgram.java
+pause
