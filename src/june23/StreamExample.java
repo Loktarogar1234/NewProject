@@ -47,7 +47,7 @@ public class StreamExample {
                 .toList();                            // Терминальная операция сбора результатов в список
         Consumer<String> printConsumer = name -> System.out.println("Name: " + name);
         filteredNames.forEach(printConsumer); // Терминальная операция печати имен с использованием Consumer
-        //Можно так (System.out::println) или (name -> System.out.println(name))
+        //Можно так (System.out::println) или (name -> System.out.println(name)) - метод референс
 
         // Промежуточные операции
 
@@ -57,7 +57,7 @@ public class StreamExample {
                 .collect(Collectors.toList());
         System.out.println("Uppercase names: " + upperCaseNames);
 
-        // flatMap: Разделение строк на символы и объединение в один поток
+        // flatMap: Разделение строк на символы и объединение в один поток !!!!!!!!!!!!!!!!!
         List<Character> characters = names.stream()
                 .flatMap(name -> name.chars().mapToObj(c -> (char) c))
                 .collect(Collectors.toList());

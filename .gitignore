@@ -11,3 +11,9 @@ out/
 .DS_Store
 /.idea/
 /1GBFile.bin
+/src/july14/lib/postgresql-42.7.3.jar
+/objects.ser
+/person.ser
+/src/july14/lib/jackson-annotations-2.17.2.jar
+/src/july14/lib/jackson-core-2.17.2.jar
+/src/july14/lib/jackson-databind-2.17.2.jar
