@@ -62,7 +62,7 @@ public class JDBCDemo {
             e.printStackTrace();
         }
 
-// Сериализация объектов в файл
+        // Сериализация объектов в файл
         try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("objects.ser"))) {
             // Создание потока для сериализации объектов в файл
             out.writeObject(objects); // Сериализация списка объектов

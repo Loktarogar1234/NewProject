@@ -1,5 +1,6 @@
 package july14;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Arrays;
@@ -57,6 +58,7 @@ class User {
 public class JacksonExample {
     public static void main(String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
 
         // Сериализация объекта в JSON
         User user = new User("John Doe", 30, "john.doe@example.com");
