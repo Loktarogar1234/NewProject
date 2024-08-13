@@ -52,7 +52,7 @@ public class ShallowDeepExample {
 
     public static void main(String[] args) {
         Address address = new Address("New York");
-        PersonOne person = new PersonOne("John", address);
+        Person person = new Person("John", address);
 
         // Сериализация (можно считать это поверхностной)
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.ser"))) {
@@ -66,7 +66,7 @@ public class ShallowDeepExample {
 
         // Десериализация
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("person.ser"))) {
-            PersonOne deserializedPerson = (PersonOne) ois.readObject();
+            Person deserializedPerson = (Person) ois.readObject();
             System.out.println("After Deserialization: " + deserializedPerson);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
