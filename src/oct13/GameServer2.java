@@ -21,7 +21,7 @@ public class GameServer2 {
 
         BufferedReader in1 = new BufferedReader(new InputStreamReader(player1Socket.getInputStream()));
         PrintWriter out1 = new PrintWriter(player1Socket.getOutputStream(), true);
-
+//!
         out1.println("Сколько будет игроков? Введите 1 для соло или 2 для двух игроков:");
         out1.flush();
 

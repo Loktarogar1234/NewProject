@@ -135,7 +135,7 @@ class UserDAOImpl implements UserDAO {
             statement.setString(1, user.getName());
             statement.setString(2, user.getEmail());
             statement.setInt(3, user.getId());
-            statement.executeUpdate();
+            statement.executeUpdate(); // Лучше тут statement.execute, т.к. не возвращается ничего. Если не ноль, то возвращать юзера, если ноль, то Null, если не уникальный айди то пробросить ошибку
         } catch (SQLException e) {
             e.printStackTrace();
         }

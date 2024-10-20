@@ -15,6 +15,7 @@ public class GameClient2 {
 
         while ((serverMessage = in.readLine()) != null) {
             System.out.println(serverMessage);
+            //
             if (serverMessage.contains("Введите число:")) {
                 String guess = console.readLine();
                 out.println(guess);

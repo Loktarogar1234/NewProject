@@ -11,8 +11,8 @@ package avg08;
 
 
 import java.io.*;
-import javax.xml.bind.*; //зависимости через маверн нужно добавить
-import com.google.gson.Gson;
+// import javax.xml.bind.*; //зависимости через маверн нужно добавить
+// import com.google.gson.Gson;
 
 // Стандартная сериализация
 //Описание: Это самый простой и распространенный способ сериализации в Java. Для того чтобы класс можно было
@@ -155,9 +155,9 @@ public class SerializationTypesExamples {
     public static void main(String[] args) {
         standardSerialization();
         customSerialization();
-        xmlSerialization();
-        jsonSerialization();
-        externalizableSerialization();
+        //xmlSerialization();
+        //jsonSerialization();
+        //externalizableSerialization();
     }
 
     private static void standardSerialization() {
@@ -193,7 +193,7 @@ public class SerializationTypesExamples {
             e.printStackTrace();
         }
     }
-
+/*
     private static void xmlSerialization() {
         XMLSerializationExample example = new XMLSerializationExample(1, "John Doe");
 
@@ -239,4 +239,6 @@ public class SerializationTypesExamples {
             e.printStackTrace();
         }
     }
+
+ */
 }
