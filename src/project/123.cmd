@@ -1,0 +1,2 @@
+javac -cp "C:\Program Files\Apache Software Foundation\Tomcat 11.0\lib\javax.servlet-api-3.1.0.jar" -d C:\Users\Evgeny\IdeaProjects\NewProject\src\project\WEB-INF\classes C:\Users\Evgeny\IdeaProjects\NewProject\src\project\src\GameServlet.java
+jar cvf GameApp.war *
